@@ -1,7 +1,7 @@
 ﻿<%@ Page Language="C#" %>
 
 <script runat="server">
-   
+
 </script>
 
 <!DOCTYPE html>
@@ -13,8 +13,8 @@
     <link type="text/css" rel="stylesheet" href="https://speed.ext.net/www/intro/css/main.css" />
 </head>
 <body>
-   
-       <div style='align-items: center;'>
+
+    <div style='align-items: center;'>
 
         <ext:ResourceManager runat="server" Theme="Gray" />
         <ext:Button runat="server" Text="Click aqui!" Icon="ApplicationStart" />
@@ -42,6 +42,32 @@
                 </ext:Menu>
             </Menu>
         </ext:Button>
+
+        <%for (int i = 1; i < 5; i++)
+            {
+        %>
+        <br />
+
+        <%
+
+
+            } %>
+
+
+        <ext:SplitButton ID="SplitButtonExample" runat="server" Text="Paste"
+            Icon="PastePlain">
+            <Menu>
+                <ext:Menu>
+                    <Items>
+                        <ext:MenuItem Text="Paste Plain Text"  Icon="Attach"/>
+                        <ext:MenuItem Text="Paste with Merge" Icon="PageWhitePasteTable"/>
+                        <ext:MenuSeparator />
+                        <ext:MenuItem Text="Paste Special..." Icon="PasteWord"/>
+                    </Items>
+                </ext:Menu>
+            </Menu>
+        </ext:SplitButton>
+
 
 
     </div>
