@@ -92,6 +92,7 @@
     <Content Include="App_Readme\Transformer.NET\README.txt" />
     <Content Include="Ext.NET.Button.aspx" />
     <Content Include="Ext.NET.Default.aspx" />
+    <Content Include="Ext.Net.Layout.aspx" />
     <Content Include="Ext.NET.Panel.aspx" />
     <Content Include="Ext.Net.Windows.aspx" />
     <Content Include="images\AddressBook.ico" />
@@ -101,6 +102,19 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ext.Net.Layout.aspx.cs">
+      <DependentUpon>Ext.Net.Layout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ext.Net.Layout.aspx.designer.cs">
+      <DependentUpon>Ext.Net.Layout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ext.Net.Layout.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ext.Net.Layout.designer.cs">
+      <DependentUpon>Ext.Net.Layout.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ext.Net.Windows.aspx.cs">
       <DependentUpon>Ext.Net.Windows.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
